@@ -29,7 +29,7 @@ int main(int argc, char *argv[]) {
             return 1;
         }
 
-        uint32_t hv = nboToHbo(nv);
+        uint32_t hv = n2h(nv);
 
         if (first == 0){
             printf(" + ");
@@ -48,7 +48,6 @@ int main(int argc, char *argv[]) {
 }
 
 void printHex(uint32_t num) {
-    // 값이 16비트 이하인 경우 4자리 헥스(앞에 0 채움), 그 이상이면 기본 헥스 출력
     if (num < 0x10000){
         printf("%u(0x%04x)", num, num);
     }
