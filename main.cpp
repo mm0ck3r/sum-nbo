@@ -36,7 +36,7 @@ int main(int argc, char *argv[]) {
         }
         printHex(hv);
 
-        sum += host_val;
+        sum += hv;
         first = false;
     }
 
